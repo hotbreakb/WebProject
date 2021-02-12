@@ -161,11 +161,11 @@ a {
 
 .main-grid {
   display: flex; /* div: row align*/
+  flex-direction: row;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   padding-top: 20px;
   padding-bottom: 100px;
-  flex-direction: row;
 }
 
 .main-grid .col {
@@ -182,9 +182,14 @@ a {
 
 @media screen and (max-width: 768px) {
   .main-grid {
-    justify-content: right;
+    justify-content: center;
     flex-direction: column;
-    width: 50vh;
+  }
+
+  .main-grid .col {
+    justify-content: center;
+    padding: var(--padding);
+    width: 45vh;
   }
 
   .main-grid .col .desc {
@@ -194,15 +199,18 @@ a {
   }
 }
 
-.shop-img-box img {
+/* .shop-img-box .box img {
   transform: scale(1);
   transition: all 0.3s ease-in-out;
 }
 
-.shop-img-box img:hover {
+.shop-img-box .box img:hover {
   transform: scale(1.1);
-  overflow: hidden;
 }
+
+.box {
+  overflow: hidden;
+} */
 
 .main-grid .col .desc {
   font-size: 14px;

@@ -1,3 +1,49 @@
+## To do list
+
+- [ ] .container .main-grid 작은 화면일 때 가운데 정렬
+      justify-content: center;를 쓰면 div를 가운데 정렬할 수 있을 거라고 생각했는데 안 된다.
+
+```
+@media screen and (max-width: 768px) {
+  .main-grid {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .main-grid .col {
+    justify-content: center;
+    padding: var(--padding);
+    width: 45vh;
+  }
+
+  .main-grid .col .desc {
+    font-size: 13px;
+    letter-spacing: 0.7px;
+    line-height: 1.5;
+  }
+}
+```
+
+- [ ] navbar 수정하기
+      분명 다 만들었다고 생각했는데 다시 보니까 이상해졌다.
+      <br>
+- [ ] main-img cover로 보이게 수정하기
+      이것도 됐었는데 고치다보니까 바뀌어있다.
+      <br>
+- [ ] container 안에 있는 사진 크기 줄이기
+      작은 화면일 때만 고려하다 보니 신경쓰지 못했다.
+      <br>
+- [ ] shop-img-box 안에 있는 사진 간격 없애기
+      <br>
+- [ ] shop-img-box hover 효과 만들기
+      <br>
+- [ ] footbar 만들기
+      위부터 만들고 싶어서 안 만들었다.
+
+<br>
+<br>
+<br>
+
 ## Try Again
 
 #### 1. Button in picture
