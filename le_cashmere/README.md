@@ -1,7 +1,14 @@
 ## Purpose
 
 To clone a reactive website
-URL: http://lecashmere.co.kr/ (http://rwdb.kr/page/2/)
+URL: http://lecashmere.co.kr/
+
+Reference:
+http://rwdb.kr/page/2/
+https://pixabay.com/ko/
+
+- The photos used have nothing to do with the content.
+- I used a non-copyright photo.
 
 ---
 
@@ -33,22 +40,19 @@ URL: http://lecashmere.co.kr/ (http://rwdb.kr/page/2/)
 
 - [ ] navbar 수정하기:
       분명 다 만들었다고 생각했는데 다시 보니까 이상해졌다.
-      <br>
-- [x] main-img cover로 보이게 수정하기 (2021.02.15 15:32):
-      이것도 됐었는데 고치다보니까 바뀌어있다.
-      <br>
-- [ ] container 안에 있는 사진 크기 줄이기:
-      작은 화면일 때만 고려하다 보니 신경쓰지 못했다.
-      <br>
-- [ ] shop-img-box 안에 있는 사진 간격 없애기
-      <br>
+- [x] main-img cover로 보이게 수정하기 (2021.02.15 15:32)
+- [x] container 안에 있는 사진 크기 줄이기 (2021.02.15 21:23)
+- [ ] shop-img-box 안에 있는 사진 간격 없애기 (2021.02.16 12:37)
+      해결했는데 다시 생겼음. 이해를 못하겠음 아아악
 - [ ] shop-img-box hover 효과 만들기
-      <br>
 - [ ] footbar 만들기:
       위부터 만들고 싶어서 안 만들었다.
-      <br>
 - [ ] main-img 슬라이드 만들기:
       js가 필요할 것 같다.
+
+- [ ] main-journal 작은 화면에서 왼쪽으로 붙는 거 수정하기: shop-img-box랑 똑같이 css를 만들어도 바뀌지 않는다.
+
+- [x] shop-img-box에서 두 번째 줄에 있는 table의 간격 줄이기 & 비율 바꾸기 (2021.02.16 01:16)
 
 <br>
 <br>
@@ -118,8 +122,10 @@ So I will delete the 'position: relative;' and later recreate it without using t
 
 ---
 
-## My two cents
+## Difficulties
 
-1. It's hard to care a small unit.
-2. It's too long to use only css when designing.
-3. It takes a long time to decorate from beginning to end.
+1. Caring a small unit.
+2. Using only css when designing.
+3. Decorating from beginning to end.
+4. Finding the center
+5. Consideration of screen size

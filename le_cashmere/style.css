@@ -14,6 +14,7 @@
 body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box; /* Size include padding and margin */
 }
 
 a {
@@ -27,31 +28,70 @@ a {
   display: flex;
   position: sticky;
   top: 0;
-  justify-content: space-between;
-  text-align: center;
+  justify-content: flex-start;
+  align-items: center; /* Align text in one line */
+  padding: 0px 12px;
   background-color: var(--white-color);
-  color: var(--black-color);
-  border-bottom: lightslategray;
-  border-bottom-width: 10px; /* 왜 안보임 */
+  border-bottom: rgb(196, 196, 196);
+  border-bottom-width: 0.5px; /* 왜 안보임 */
+  border-bottom-style: solid;
 }
 
 .navbar .title {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bolder;
-  padding: 15px;
+  padding: 20px;
 }
 
-.navbar .menu {
+.navbar .navbar_list {
+  list-style: none;
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar .navbar_list li {
+  padding: 8px 45px;
+}
+
+.navbar .menu_str {
+  display: none;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
 }
 
-.navbar span {
-  font-size: 18px;
+.navbar .menu_icon {
+  display: none;
+  font-size: 30px;
   cursor: pointer;
-  padding: 15px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar .title {
+    font-size: 18px;
+    padding: 2px;
+  }
+
+  .navbar .navbar_list {
+    display: none;
+  }
+
+  .navbar .menu_str {
+    display: inline;
+  }
+
+  .navbar .menu_icon {
+    display: inline;
+  }
 }
 
 /*------------------------------------------------*/
@@ -108,10 +148,6 @@ a {
   margin-left: 50px;
 }
 
-.menu_icon {
-  font-size: 30px;
-}
-
 /*------------------------------------------------*/
 /* main-img */
 
@@ -137,10 +173,9 @@ a {
 /* container > main-grid */
 
 .main-grid {
-  display: flex; /* div: row align*/
+  display: flex; /* div: row align */
   flex-direction: row;
   text-align: center;
-  /* width: 100%; */
   padding-top: 20px;
   padding-bottom: 100px;
 }
@@ -151,7 +186,6 @@ a {
 }
 
 .main-grid .col .title {
-  /* padding: 25px; */
   margin-bottom: 25px;
   font-size: 18px;
   font-weight: bolder;
@@ -201,18 +235,16 @@ a {
 /*------------------------------------------------*/
 /* container > main-journal */
 
-@media screen and (max-width: 768px) {
-  .main-journal img,
-  .shop-img-box img {
-    justify-content: center;
-    width: 90%;
-  }
+.main-journal {
+  /* display: table; */
+  /* 2 x 2 */
+  text-align: center;
+  width: 98%; /* To create side(right & left) margins */
+  margin: 1%; /* To set center align */
 }
 
-.shop-img-box,
-.main-journal {
-  display: table;
-  text-align: center;
+.main-journal img {
+  width: 90%;
 }
 
 .main-journal .row {
@@ -228,10 +260,81 @@ a {
   margin: 15px 0px;
   font-weight: bold;
   font-size: 15px;
+  letter-spacing: 1px;
 }
 
 .main-journal .desc {
   text-transform: uppercase;
   font-size: 12px;
-  margin-bottom: 50px;
+  letter-spacing: 1px;
+  margin-bottom: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-journal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-journal .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-journal .box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-journal img {
+    width: 90%;
+  }
+}
+
+/*------------------------------------------------*/
+/* container > shop-img-box */
+
+.shop-img-box {
+  width: 93%;
+  /* (3 points) To make center align */
+  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shop-img-box img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  padding-bottom: 20px;
+}
+
+.shop-img-box .row {
+  display: table-row;
+}
+
+.shop-img-box .left-pd {
+  display: table-cell;
+  width: 40%;
+}
+
+.shop-img-box .right-pd {
+  display: table-cell;
+}
+
+@media screen and (max-width: 768px) {
+  .shop-img-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shop-img-box img {
+    /* display: block; */
+    vertical-align: top; /* To remove space between images */
+  }
+
+  .shop-img-box .row {
+    display: flex;
+    flex-direction: column;
+  }
 }
