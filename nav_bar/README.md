@@ -1,4 +1,4 @@
-# WebProject
+# Navbar
 
 - Full Screen
   ![1](https://user-images.githubusercontent.com/64337152/107580281-ab6e4b80-6c39-11eb-956f-815017feb871.png)
