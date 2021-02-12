@@ -115,3 +115,11 @@ The problem is that the navbar is hidden behind the picture.
 ![prob1](https://user-images.githubusercontent.com/64337152/107729378-17cd7580-6d34-11eb-9229-8cc053e9945e.png)
 
 So I will delete the 'position: relative;' and later recreate it without using the 'button tag'.
+
+---
+
+## My two cents
+
+1. It's hard to care a small unit.
+2. It's too long to use only css when designing.
+3. It takes a long time to decorate from beginning to end.
