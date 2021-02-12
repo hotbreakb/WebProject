@@ -20,6 +20,7 @@ a {
   text-decoration: none;
 }
 
+/*------------------------------------------------*/
 /* navbar */
 
 .navbar {
@@ -53,6 +54,7 @@ a {
   padding: 15px;
 }
 
+/*------------------------------------------------*/
 /* navbar__side */
 
 .navbar__side {
@@ -95,7 +97,7 @@ a {
 }
 
 .navbar__side.active {
-  dispaly: flex;
+  display: flex;
 }
 
 .navbar__side .closebtn {
@@ -110,56 +112,103 @@ a {
   font-size: 30px;
 }
 
-.main img {
-  float: right; /* Alignment: right */
-  height: 120vw; /* vw: using viewport */
+.main {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
 }
 
+.main img {
+  float: right; /* Alignment: right */
+  height: 50vh; /* vw: using viewport */
+}
+
+.main_Img {
+  /*cover를 img에 적용시키면 안 들어가짐 왜임*/
+  object-fit: cover;
+}
+
+/*------------------------------------------------*/
 /* container */
 
 .container {
   font-family: "Noto Sans KR", sans-serif;
 }
 
-.container img {
-  width: 90%;
-}
-
+.main-journal img,
 .shop-img-box img {
+  justify-content: center;
   width: 90%;
 }
 
-.main-grid {
-  text-align: center;
-}
-
-.main-grid .col {
-  padding: var(--padding);
-}
-
-.main-grid .col .title {
-  padding: 25px;
-  font-size: 18px;
-  font-weight: bolder;
-}
-
-.main-grid .col .desc {
-  padding: 10px;
-  font-size: 15px;
-}
-
-.main-grid .title {
-  text-transform: uppercase;
-}
-
+.shop-img-box,
 .main-journal {
   text-align: center;
 }
 
 .main-journal .title {
   text-transform: uppercase;
+  margin: 15px 0px;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .main-journal .desc {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+.main-grid {
+  display: flex; /* div: row align*/
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  flex-direction: row;
+}
+
+.main-grid .col {
+  padding: var(--padding);
+  width: 100vh;
+}
+
+.main-grid .col .title {
+  /* padding: 25px; */
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+  .main-grid {
+    justify-content: right;
+    flex-direction: column;
+    width: 50vh;
+  }
+
+  .main-grid .col .desc {
+    font-size: 13px;
+    letter-spacing: 0.7px;
+    line-height: 1.5;
+  }
+}
+
+.shop-img-box img {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.shop-img-box img:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.main-grid .col .desc {
+  font-size: 14px;
+  letter-spacing: 0.7px;
+}
+
+.main-grid .title {
   text-transform: uppercase;
 }
