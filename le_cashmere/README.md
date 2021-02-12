@@ -1,3 +1,10 @@
+## Purpose
+
+To clone a reactive website
+URL: http://lecashmere.co.kr/ (http://rwdb.kr/page/2/)
+
+---
+
 ## To do list
 
 - [ ] .container .main-grid 작은 화면일 때 가운데 정렬
@@ -24,23 +31,23 @@
 }
 ```
 
-- [ ] navbar 수정하기
+- [ ] navbar 수정하기:
       분명 다 만들었다고 생각했는데 다시 보니까 이상해졌다.
       <br>
-- [x] main-img cover로 보이게 수정하기 (2021.02.15 15:32)
+- [x] main-img cover로 보이게 수정하기 (2021.02.15 15:32):
       이것도 됐었는데 고치다보니까 바뀌어있다.
       <br>
-- [ ] container 안에 있는 사진 크기 줄이기
+- [ ] container 안에 있는 사진 크기 줄이기:
       작은 화면일 때만 고려하다 보니 신경쓰지 못했다.
       <br>
 - [ ] shop-img-box 안에 있는 사진 간격 없애기
       <br>
 - [ ] shop-img-box hover 효과 만들기
       <br>
-- [ ] footbar 만들기
+- [ ] footbar 만들기:
       위부터 만들고 싶어서 안 만들었다.
       <br>
-- [ ] main-img 슬라이드 만들기
+- [ ] main-img 슬라이드 만들기:
       js가 필요할 것 같다.
 
 <br>
