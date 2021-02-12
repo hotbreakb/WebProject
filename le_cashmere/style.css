@@ -112,19 +112,17 @@ a {
   font-size: 30px;
 }
 
-.main {
+/*------------------------------------------------*/
+/* main-img */
+
+.main-Img {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
 }
 
-.main img {
+.main-Img img {
   float: right; /* Alignment: right */
-  height: 50vh; /* vw: using viewport */
-}
-
-.main_Img {
-  /*cover를 img에 적용시키면 안 들어가짐 왜임*/
+  height: 60vh; /* vw: using viewport */
   object-fit: cover;
 }
 
@@ -135,29 +133,8 @@ a {
   font-family: "Noto Sans KR", sans-serif;
 }
 
-.main-journal img,
-.shop-img-box img {
-  justify-content: center;
-  width: 90%;
-}
-
-.shop-img-box,
-.main-journal {
-  text-align: center;
-}
-
-.main-journal .title {
-  text-transform: uppercase;
-  margin: 15px 0px;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.main-journal .desc {
-  text-transform: uppercase;
-  font-size: 12px;
-  margin-bottom: 50px;
-}
+/*------------------------------------------------*/
+/* container > main-grid */
 
 .main-grid {
   display: flex; /* div: row align*/
@@ -219,4 +196,42 @@ a {
 
 .main-grid .title {
   text-transform: uppercase;
+}
+
+/*------------------------------------------------*/
+/* container > main-journal */
+
+@media screen and (max-width: 768px) {
+  .main-journal img,
+  .shop-img-box img {
+    justify-content: center;
+    width: 90%;
+  }
+}
+
+.shop-img-box,
+.main-journal {
+  display: table;
+  text-align: center;
+}
+
+.main-journal .row {
+  display: table-row;
+}
+
+.main-journal .box {
+  display: table-cell;
+}
+
+.main-journal .title {
+  text-transform: uppercase;
+  margin: 15px 0px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.main-journal .desc {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 50px;
 }
