@@ -447,11 +447,17 @@ a {
 
 .site-footer .content .row .col {
   padding: 40px 0;
+  width: 33.33%;
 }
 
 .site-footer .content .row .col li {
   list-style: none;
   padding-bottom: 10px;
+
+  /* (3 points) To make center align */
+  /* margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto; */
 }
 
 .site-footer .content .col .runtime {
@@ -462,12 +468,23 @@ a {
 
 .site-footer .content .col .sns ul {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: row; /*align-items:center*/
+  text-align: center;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer .content .col .sns li {
+  display: inline-block;
+}
+
+.site-footer .content .col .sns i {
+  padding: 20px;
 }
 
 .site-footer .content .col .sns .fb {
-  padding: 0px 10px 0px 2px;
+  padding: -2px;
 }
 
 .site-footer .content .col .sns i {
@@ -493,4 +510,14 @@ a {
   font-size: 10px;
   font-weight: bold;
   color: var(--brown-color);
+}
+
+@media screen and (max-width: 768px) {
+  .site-footer .content .row {
+    font-size: 13px;
+  }
+
+  .site-footer .content .col .sns .fb {
+    padding: 0;
+  }
 }
