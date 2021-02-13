@@ -350,14 +350,22 @@ a {
     flex-direction: column;
   }
 
-  .shop-img-box img {
-    /* display: block; */
+  .shop-img-box .box img,
+  .shop-img-box .row img {
+    padding: 0;
     vertical-align: top; /* To remove space between images */
   }
 
   .shop-img-box .row {
     display: flex;
     flex-direction: column;
+  }
+
+  .shop-img-box .left-pd,
+  .shop-img-box .right-pd {
+    display: block;
+    width: 100%;
+    padding: 0px;
   }
 }
 
