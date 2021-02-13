@@ -240,7 +240,8 @@ a {
   /* 2 x 2 */
   text-align: center;
   width: 98%; /* To create side(right & left) margins */
-  margin: 1%; /* To set center align */
+  margin: 1%;
+  /* To set center align */
 }
 
 .main-journal img {
@@ -276,14 +277,10 @@ a {
   .main-journal {
     display: flex;
     flex-direction: column;
+    width: 99%;
   }
 
   .main-journal .row {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .main-journal .box {
     display: flex;
     flex-direction: column;
   }
