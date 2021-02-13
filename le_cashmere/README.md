@@ -38,12 +38,12 @@ https://pixabay.com/ko/
 }
 ```
 
-- [x] navbar_list 수정하기 (21/02/16 11:05)
-- [x] main-img cover로 보이게 수정하기 (21/02/15 15:32)
-- [x] container 안에 있는 사진 크기 줄이기 (21/02/15 21:23)
-- [ ] shop-img-box 안에 있는 사진 간격 없애기 (21/02/16 12:37)
+- [x] (21/02/13 11:05) navbar_list 수정하기
+- [x] (21/02/12 15:32) main-img cover로 보이게 수정하기
+- [x] (21/02/12 21:23) container 안에 있는 사진 크기 줄이기
+- [ ] (21/02/13 12:37) 작은 화면에서 shop-img-box 안에 있는 사진 간격 없애기
       해결했는데 다시 생겼음. 이해를 못하겠음 아아악
-- [ ] shop-img-box hover 효과 만들기
+- [x] (21/02/13 12:30) shop-img-box hover 효과 만들기
 - [ ] footbar 만들기:
       위부터 만들고 싶어서 안 만들었다.
 - [ ] main-img 슬라이드 만들기:
@@ -51,88 +51,9 @@ https://pixabay.com/ko/
 
 - [ ] main-journal 작은 화면에서 왼쪽으로 붙는 거 수정하기: shop-img-box랑 똑같이 css를 만들어도 바뀌지 않는다.
 
-- [x] shop-img-box에서 두 번째 줄에 있는 table의 간격 줄이기 & 비율 바꾸기 (21/02/16 01:16, 21/02/16 11:20)
+- [x] (21/02/13 01:16, 21/02/13 11:20) shop-img-box에서 두 번째 줄에 있는 table의 간격 줄이기 & 비율 바꾸기
 
-<br>
-<br>
-<br>
-
-## Try Again
-
-#### 1. Button in Picture
-
-```
-<a href="http://lecashmere.co.kr/2020/09/04/brand-film/">
-    <div class="read-more-btn">read more</div>
-    <div class="thumbnail" style="background-image: url('Image/Img4.jpg')" ></div>
-</a>
-```
-
-I tried to put the picture as 'background', but the image is not showing.
-
-[Try] To solve this, I put a button tag inside the image.
-
-- HTML
-
-```
-<div class="main-journal">
-    <div class="box">
-        <img src="Image/Img4.jpg" alt="" />
-        <button class="read-more-btn" onclick="location.href = 'http://lecashmere.co.kr/2020/09/04/brand-film/' ">
-        read more
-        </button>
-        <div class="title">20 FW special edition</div>
-        <div class="desc">letter from le cashmere</div>
-    </div>
-    ...
-```
-
-- CSS
-
-```
-.main-journal .box {
-  position: relative;
-  /* width: 50%; */
-}
-
-.main-journal .box .read-more-btn {
-  /* display: none; */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: var(--button-color);
-  color: white;
-  font-size: 14px;
-  padding: 18px 45px;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-```
-
-The problem is that the navbar is hidden behind the picture.
-
-![prob1](https://user-images.githubusercontent.com/64337152/107729378-17cd7580-6d34-11eb-9229-8cc053e9945e.png)
-
-So I will delete the 'position: relative;' and later recreate it without using the 'button tag'.
-
-<br>
-
-#### 2. Shrinking Title on Small Screen
-
-I put the title in exactly the same way.
-![prob1](https://user-images.githubusercontent.com/64337152/107838369-eb276580-6de8-11eb-9ded-7b372da9b94b.png)
-
-But if the screen gets smaller, so does the title.
-![prob2](https://user-images.githubusercontent.com/64337152/107838366-e95da200-6de8-11eb-9841-a532027928be.png)
-
-I tried to modify the padding and font-size of the title, but failed, so I decided to put the \_ in another way.
-![prob3](https://user-images.githubusercontent.com/64337152/107838368-eb276580-6de8-11eb-897b-574c49891eea.png)
-
-The title is an image on the actual site, it is reflected maybe.
+- [ ] shop-img-box가 navbar 위로 올라오는 것 수정하기
 
 ---
 
@@ -153,6 +74,7 @@ The title is an image on the actual site, it is reflected maybe.
 2. display: flex;
 3. align-items: center;
 4. float: right;
+5. box-sizing: inherit;
 
 ---
 

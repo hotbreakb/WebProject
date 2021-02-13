@@ -223,19 +223,6 @@ a {
   }
 }
 
-/* .shop-img-box .box img {
-  transform: scale(1);
-  transition: all 0.3s ease-in-out;
-}
-
-.shop-img-box .box img:hover {
-  transform: scale(1.1);
-}
-
-.box {
-  overflow: hidden;
-} */
-
 .main-grid .col .desc {
   font-size: 14px;
   letter-spacing: 0.7px;
@@ -315,6 +302,7 @@ a {
   margin: 0px auto;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 
 .shop-img-box .box img {
@@ -322,10 +310,18 @@ a {
   height: 32vh;
   object-fit: cover;
   padding-bottom: 15px;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.shop-img-box .box img:hover,
+.shop-img-box .row img:hover {
+  transform: scale(1.1);
 }
 
 .shop-img-box .row {
   display: table-row;
+  overflow: hidden;
 }
 
 .shop-img-box .row img {
@@ -333,17 +329,19 @@ a {
   height: 27vh;
   object-fit: cover;
   padding-bottom: 15px;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
 }
 
 .shop-img-box .left-pd {
   display: table-cell;
-  width: 40vh;
+  width: 40vw;
   padding-right: 10px;
 }
 
 .shop-img-box .right-pd {
   display: table-cell;
-  width: 80vh;
+  width: 80vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -361,4 +359,61 @@ a {
     display: flex;
     flex-direction: column;
   }
+}
+
+/*------------------------------------------------*/
+/* footer */
+
+.site-footer {
+  margin-top: 100px;
+}
+
+.site-footer .bar .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.site-footer .bar .row a {
+  color: var(--brown-color);
+  text-decoration: none;
+  padding: 30px;
+}
+
+.site-footer .bar .row. .col {
+}
+
+.site-footer .bar .row .col .find-store img {
+  width: 25px;
+  height: 20px;
+}
+
+.site-footer .bar {
+  background-color: var(--info-color);
+}
+
+.site-footer .content {
+  background-color: #e0e0e0;
+}
+
+.site-footer .content .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.site-footer .content .row li {
+  list-style: none;
+}
+
+.site-footer .content .row li a {
+  color: var(--brown-color);
+  text-decoration: none;
+  padding: 30px;
+}
+
+.site-footer .content .col .sns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
