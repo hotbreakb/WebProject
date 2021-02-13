@@ -406,6 +406,23 @@ a {
   border-right: 1px solid #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .site-footer .bar .row {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+  }
+
+  .site-footer .bar .row .col {
+    width: 100%;
+  }
+
+  .site-footer .bar .row .col.center {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+}
+
 /*------------------------------------------------*/
 /* footer > content */
 
