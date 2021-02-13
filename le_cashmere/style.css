@@ -368,6 +368,9 @@ a {
   margin-top: 100px;
 }
 
+/*------------------------------------------------*/
+/* footer > bar */
+
 .site-footer .bar .row {
   display: flex;
   flex-direction: row;
@@ -377,20 +380,34 @@ a {
 .site-footer .bar .row a {
   color: var(--brown-color);
   text-decoration: none;
-  padding: 30px;
+  font-size: 15px;
+  font-family: "Libre Caslon Text", serif;
 }
 
-.site-footer .bar .row. .col {
+.site-footer .bar .row i {
+  font-size: 20px;
+  padding: 10px;
 }
 
-.site-footer .bar .row .col .find-store img {
-  width: 25px;
-  height: 20px;
-}
-
-.site-footer .bar {
+.site-footer .bar .row .col {
+  float: left;
+  width: 33.24%;
+  text-align: center;
+  line-height: 50px;
   background-color: var(--info-color);
 }
+
+.site-footer .bar .row .col.right {
+  border-right: 1px solid var(--info-color); /* Erase the white space */
+}
+
+.site-footer .bar .row .col.center {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+/*------------------------------------------------*/
+/* footer > content */
 
 .site-footer .content {
   background-color: #e0e0e0;
@@ -409,7 +426,6 @@ a {
 .site-footer .content .row li a {
   color: var(--brown-color);
   text-decoration: none;
-  padding: 30px;
 }
 
 .site-footer .content .col .sns {
