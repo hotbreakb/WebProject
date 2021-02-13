@@ -85,3 +85,32 @@ I waana make 'Expansion'.
 I put 'overflow: hidden;' in because I wanted the size of the picture to be constant, but it didn't work out.
 
 ![prob6](https://user-images.githubusercontent.com/64337152/107840696-4c0a6a00-6df8-11eb-82f0-e8083cb1c681.png)
+
+#### 4. Pictures coming up above Navbar
+
+![image](https://user-images.githubusercontent.com/64337152/107854992-10f15080-6e63-11eb-86af-51b5a980bc26.png)
+
+- CSS
+
+```
+.shop-img-box .box img {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.shop-img-box .box img:hover,
+.shop-img-box .row img:hover {
+  transform: scale(1.1);
+}
+
+.shop-img-box .row {
+  overflow: hidden;
+}
+
+.shop-img-box .row img {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+```
+
+I can solve this problem if I erase the transition.

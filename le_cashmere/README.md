@@ -44,14 +44,13 @@ https://pixabay.com/ko/
 - [x] (21/02/13 12:37, 21/02/14 01:05) 작은 화면에서 shop-img-box 안에 있는 사진 간격 없애기
 - [x] (21/02/13 12:30) shop-img-box hover 효과 만들기
 - [x] (21/02/14 12:57) footbar 만들기:
-
-- [ ] main-img 슬라이드 만들기:
-      js가 필요할 것 같다.
-
+- [x] (21/02/14 02:00) main-img 슬라이드 만들기
 - [x] (21/02/14 01:11) main-journal 작은 화면에서 왼쪽으로 붙는 거 수정하기
 - [x] (21/02/13 01:16, 21/02/13 11:20) shop-img-box에서 두 번째 줄에 있는 table의 간격 줄이기 & 비율 바꾸기
+- [x] (21/02/14 01:17) shop-img-box가 navbar 위로 올라오는 것 수정하기
 
-- [ ] shop-img-box가 navbar 위로 올라오는 것 수정하기
+- [ ] main-img 슬라이드 btn 흰색 테두리, 배경 나오게 하기
+- [ ] mobile menu 수정하기
 
 ---
 
