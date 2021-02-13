@@ -38,11 +38,10 @@ https://pixabay.com/ko/
 }
 ```
 
-- [ ] navbar 수정하기:
-      분명 다 만들었다고 생각했는데 다시 보니까 이상해졌다.
-- [x] main-img cover로 보이게 수정하기 (2021.02.15 15:32)
-- [x] container 안에 있는 사진 크기 줄이기 (2021.02.15 21:23)
-- [ ] shop-img-box 안에 있는 사진 간격 없애기 (2021.02.16 12:37)
+- [x] navbar_list 수정하기 (21/02/16 11:05)
+- [x] main-img cover로 보이게 수정하기 (21/02/15 15:32)
+- [x] container 안에 있는 사진 크기 줄이기 (21/02/15 21:23)
+- [ ] shop-img-box 안에 있는 사진 간격 없애기 (21/02/16 12:37)
       해결했는데 다시 생겼음. 이해를 못하겠음 아아악
 - [ ] shop-img-box hover 효과 만들기
 - [ ] footbar 만들기:
@@ -52,7 +51,7 @@ https://pixabay.com/ko/
 
 - [ ] main-journal 작은 화면에서 왼쪽으로 붙는 거 수정하기: shop-img-box랑 똑같이 css를 만들어도 바뀌지 않는다.
 
-- [x] shop-img-box에서 두 번째 줄에 있는 table의 간격 줄이기 & 비율 바꾸기 (2021.02.16 01:16)
+- [x] shop-img-box에서 두 번째 줄에 있는 table의 간격 줄이기 & 비율 바꾸기 (21/02/16 01:16, 21/02/16 11:20)
 
 <br>
 <br>
@@ -60,7 +59,7 @@ https://pixabay.com/ko/
 
 ## Try Again
 
-#### 1. Button in picture
+#### 1. Button in Picture
 
 ```
 <a href="http://lecashmere.co.kr/2020/09/04/brand-film/">
@@ -120,6 +119,21 @@ The problem is that the navbar is hidden behind the picture.
 
 So I will delete the 'position: relative;' and later recreate it without using the 'button tag'.
 
+<br>
+
+#### 2. Shrinking Title on Small Screen
+
+I put the title in exactly the same way.
+![prob1](https://user-images.githubusercontent.com/64337152/107838369-eb276580-6de8-11eb-9ded-7b372da9b94b.png)
+
+But if the screen gets smaller, so does the title.
+![prob2](https://user-images.githubusercontent.com/64337152/107838366-e95da200-6de8-11eb-9841-a532027928be.png)
+
+I tried to modify the padding and font-size of the title, but failed, so I decided to put the \_ in another way.
+![prob3](https://user-images.githubusercontent.com/64337152/107838368-eb276580-6de8-11eb-897b-574c49891eea.png)
+
+The title is an image on the actual site, it is reflected maybe.
+
 ---
 
 ## Difficulties
@@ -129,3 +143,19 @@ So I will delete the 'position: relative;' and later recreate it without using t
 3. Decorating from beginning to end.
 4. Finding the center
 5. Consideration of screen size
+6. Different components for different tags
+
+---
+
+## To study
+
+1. vw VS vh
+2. display: flex;
+3. align-items: center;
+4. float: right;
+
+---
+
+## Plan
+
+1. clone other site with someone
