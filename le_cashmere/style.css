@@ -508,11 +508,6 @@ a {
 .site-footer .content .row .col li {
   list-style: none;
   padding-bottom: 10px;
-
-  /* (3 points) To make center align */
-  /* margin: 0px auto;
-  margin-left: auto;
-  margin-right: auto; */
 }
 
 .site-footer .content .col .runtime {
@@ -522,8 +517,6 @@ a {
 }
 
 .site-footer .content .col .sns ul {
-  display: flex;
-  flex-direction: row; /*align-items:center*/
   text-align: center;
   justify-content: start;
   padding: 0;
@@ -535,11 +528,8 @@ a {
 }
 
 .site-footer .content .col .sns i {
-  padding: 20px;
-}
-
-.site-footer .content .col .sns .fb {
-  padding: -2px;
+  padding: 10px;
+  width: 33.3%;
 }
 
 .site-footer .content .col .sns i {
