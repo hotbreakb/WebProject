@@ -282,7 +282,7 @@ a {
 .main-grid .col .title {
   margin-bottom: 25px;
   font-size: 15px;
-  font-weight: bolder;
+  font-weight: bold;
   letter-spacing: 1.5px;
 }
 
@@ -294,8 +294,12 @@ a {
 
   .main-grid .col {
     justify-content: center;
-    padding: var(--padding);
+    padding: 45px 25px 15px 25px;
     width: 45vh;
+  }
+
+  .main-grid .col .title {
+    margin-bottom: 20px;
   }
 
   .main-grid .col .desc {
@@ -318,17 +322,15 @@ a {
 /* container > main-journal */
 
 .main-journal {
-  /* display: table; */
-  /* 2 x 2 */
+  display: table; /* 2 x 2 */
   text-align: center;
   width: 98%; /* To create side(right & left) margins */
-  margin: 1%;
-  /* To set center align */
+  margin: 1%; /* To set center align */
 }
 
 .main-journal img {
   width: 85%;
-  /* height: 40vh; */
+  height: 25vh;
   object-fit: cover;
 }
 
@@ -352,7 +354,7 @@ a {
   text-transform: uppercase;
   font-size: 13.8px;
   letter-spacing: 1px;
-  margin-bottom: 70px;
+  margin-bottom: 110px;
 }
 
 @media screen and (max-width: 768px) {
@@ -369,6 +371,11 @@ a {
 
   .main-journal img {
     width: 90%;
+    height: 35vh;
+  }
+
+  .main-journal .desc {
+    margin-bottom: 70px;
   }
 }
 
@@ -382,6 +389,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+  padding-bottom: 10px;
 }
 
 .shop-img-box .box img {
@@ -397,7 +405,7 @@ a {
 
 .shop-img-box .row img {
   width: 100%;
-  height: 27vh;
+  height: 28vh;
   object-fit: cover;
   padding-bottom: 15px;
 }
@@ -419,8 +427,14 @@ a {
     flex-direction: column;
   }
 
-  .shop-img-box .box img,
+  .shop-img-box .box img {
+    height: 35vh;
+    padding: 0;
+    vertical-align: top;
+  }
+
   .shop-img-box .row img {
+    height: 32vh;
     padding: 0;
     vertical-align: top; /* To remove space between images */
   }
@@ -507,6 +521,7 @@ a {
   background-color: #e0e0e0;
   text-transform: uppercase;
   text-align: center;
+  padding-bottom: 0px;
 }
 
 .site-footer .content a {
@@ -552,9 +567,6 @@ a {
 .site-footer .content .col .sns i {
   padding: 10px;
   width: 33.3%;
-}
-
-.site-footer .content .col .sns i {
   font-size: 29px;
 }
 
@@ -580,6 +592,10 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .site-footer .content {
+    padding-bottom: 20px;
+  }
+
   .site-footer .content .row {
     font-size: 13px;
   }
