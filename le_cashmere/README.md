@@ -14,30 +14,6 @@ https://pixabay.com/ko/
 
 ## To do list
 
-- [ ] .container .main-grid 작은 화면일 때 가운데 정렬
-      justify-content: center;를 쓰면 div를 가운데 정렬할 수 있을 거라고 생각했는데 안 된다.
-
-```
-@media screen and (max-width: 768px) {
-  .main-grid {
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .main-grid .col {
-    justify-content: center;
-    padding: var(--padding);
-    width: 45vh;
-  }
-
-  .main-grid .col .desc {
-    font-size: 13px;
-    letter-spacing: 0.7px;
-    line-height: 1.5;
-  }
-}
-```
-
 - [x] (21/02/13 11:05) navbar_list 수정하기
 - [x] (21/02/12 15:32) main-img cover로 보이게 수정하기
 - [x] (21/02/12 21:23) container 안에 있는 사진 크기 줄이기
@@ -48,8 +24,7 @@ https://pixabay.com/ko/
 - [x] (21/02/14 01:11) main-journal 작은 화면에서 왼쪽으로 붙는 거 수정하기
 - [x] (21/02/13 01:16, 21/02/13 11:20) shop-img-box에서 두 번째 줄에 있는 table의 간격 줄이기 & 비율 바꾸기
 - [x] (21/02/14 01:17) shop-img-box가 navbar 위로 올라오는 것 수정하기
-
-- [ ] main-img 슬라이드 btn 흰색 테두리, 배경 나오게 하기
+- [x] (21/02/14 09:47) main-img 슬라이드 btn 흰색 테두리, 배경 나오게 하기
 - [ ] mobile menu 수정하기
 
 ---
