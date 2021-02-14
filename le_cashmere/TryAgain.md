@@ -118,3 +118,10 @@ I can solve this problem if I erase the transition.
 #### 5. I can't make slide event right now.
 
 I found an effect in codepen, but it is not available because it is designed to fit the size of the picture.
+
+#### 6. <
+
+![image](https://user-images.githubusercontent.com/64337152/107873488-34b1a680-6ef6-11eb-84cc-12a92f4eb829.png)
+
+The left is what I made, and the right is the original.
+I wanna put the left-angle on the left side. 'justify-content' was not available.

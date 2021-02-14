@@ -1,3 +1,13 @@
+## Clone Website
+
+![smartmockups_kl50trsc](https://user-images.githubusercontent.com/64337152/107874422-0d120c80-6efd-11eb-90a9-b1f7949ffd96.png)
+
+This is belongs to me:)
+
+(KST: UTC +9:00) 2021-02-14 19:49
+
+---
+
 ## Purpose
 
 To clone a reactive website
@@ -25,7 +35,7 @@ https://pixabay.com/ko/
 - [x] (21/02/13 01:16, 21/02/13 11:20) shop-img-box에서 두 번째 줄에 있는 table의 간격 줄이기 & 비율 바꾸기
 - [x] (21/02/14 01:17) shop-img-box가 navbar 위로 올라오는 것 수정하기
 - [x] (21/02/14 09:47) main-img 슬라이드 btn 흰색 테두리, 배경 나오게 하기
-- [ ] mobile menu 수정하기
+- [x] (21/02/14 19:02) mobile menu 수정하기
 
 ---
 
@@ -49,6 +59,7 @@ https://pixabay.com/ko/
 5. box-sizing: inherit;
 6. padding vs margin
 7. -webkit
+8. line-height vs padding
 
 ---
 

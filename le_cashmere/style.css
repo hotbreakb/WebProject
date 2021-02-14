@@ -77,12 +77,13 @@ a {
   display: none;
   font-size: 30px;
   cursor: pointer;
-  padding: 20px;
+  padding: 0px 10px;
 }
 
 @media screen and (max-width: 768px) {
   .navbar {
     justify-content: space-between;
+    text-align: center;
     padding: 5px;
   }
 
@@ -91,12 +92,20 @@ a {
     padding: 13px;
   }
 
+  .navbar .navbar_menu {
+    display: flex;
+    align-items: center; /* Align text in one line */
+  }
+
   .navbar .navbar_list {
     display: none;
   }
 
   .navbar .menu_str {
     display: inline;
+    font-size: 12.5px;
+    font-weight: bold;
+    letter-spacing: 4px;
   }
 
   .navbar .menu_icon {
@@ -109,51 +118,50 @@ a {
 
 .navbar__side {
   display: none;
-  height: 100%; /* When open, */
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 56px; /* position */
-  right: 0;
-  background-color: var(--sidebar-color);
-  overflow-x: hidden; /* To handle when it is too large */
-  transition: 0.5s; /* don't support */
-  padding-top: 60px;
 }
 
-.navbar__side a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  text-align: right;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-  font-family: "Noto Sans KR", sans-serif;
-  text-transform: uppercase;
-  font-size: 16px;
-  padding: 25px;
-}
+@media screen and (max-width: 768px) {
+  .navbar__side {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 55px;
+    right: 0;
+    background-color: var(--info-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    text-align: right;
+    justify-content: space-around;
+  }
 
-.navbar__side .navbar__icons {
-  list-style: none;
-  justify-content: space-around; /*추가: 아래쪽에 배치*/
-}
+  .navbar__side a {
+    padding: 30px;
+    text-decoration: none;
+    font-size: 12.5px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: "Noto Sans KR", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
 
-.navbar__side .navbar__icons.active {
-  display: flex;
-}
+  .navbar__side .navbar__icons {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 25px;
+  }
 
-.navbar__side.active {
-  display: flex;
-}
-
-.navbar__side .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  .navbar__side ul {
+    padding: 0;
+    margin: 0;
+    padding-top: 215px;
+    /* justify-content: space-around; */
+  }
 }
 
 /*------------------------------------------------*/
@@ -200,7 +208,6 @@ a {
   background-color: rgb(255, 255, 255);
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -262,15 +269,20 @@ a {
 
 .main-grid {
   display: flex; /* div: row align */
+  width: 90%;
   flex-direction: row;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 40px;
+  /* (3 points) To make center align */
+  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-grid .col {
   padding: var(--padding);
-  width: 20vh;
+  width: 60vh;
   /* (3 points) To make center align */
   margin: 0px auto;
   margin-left: auto;
@@ -328,7 +340,7 @@ a {
 
 .main-journal img {
   width: 85%;
-  height: 25vh;
+  height: 40vh;
   object-fit: cover;
 }
 
