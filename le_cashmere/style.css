@@ -109,12 +109,11 @@ a {
 
 .navbar__side {
   display: none;
-
   height: 100%; /* When open, */
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 59px; /*수정하기*/
+  top: 56px; /* position */
   right: 0;
   background-color: var(--sidebar-color);
   overflow-x: hidden; /* To handle when it is too large */
@@ -137,7 +136,6 @@ a {
 }
 
 .navbar__side .navbar__icons {
-  display: none;
   list-style: none;
   justify-content: space-around; /*추가: 아래쪽에 배치*/
 }
