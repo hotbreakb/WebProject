@@ -49,6 +49,7 @@ https://pixabay.com/ko/
 4. float: right;
 5. box-sizing: inherit;
 6. padding vs margin
+7. -webkit
 
 ---
 

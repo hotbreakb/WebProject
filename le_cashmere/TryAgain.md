@@ -114,3 +114,7 @@ I put 'overflow: hidden;' in because I wanted the size of the picture to be cons
 ```
 
 I can solve this problem if I erase the transition.
+
+#### 5. I can't make slide event right now.
+
+I found an effect in codepen, but it is not available because it is designed to fit the size of the picture.

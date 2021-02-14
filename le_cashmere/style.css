@@ -203,7 +203,7 @@ a {
 }
 
 /* Fading animation */
-/* .fade {
+.fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -226,7 +226,7 @@ a {
   to {
     opacity: 1;
   }
-} */
+}
 
 @media screen and (max-width: 768px) {
   .slideshow-container img {
