@@ -26,6 +26,7 @@ https://pixabay.com/ko/
 - [x] (21/02/14 01:17) shop-img-box가 navbar 위로 올라오는 것 수정하기
 - [x] (21/02/14 09:47) main-img 슬라이드 btn 흰색 테두리, 배경 나오게 하기
 - [ ] mobile menu 수정하기
+- [ ] main-img slide 효과 만들기
 
 ---
 
@@ -47,6 +48,7 @@ https://pixabay.com/ko/
 3. align-items: center;
 4. float: right;
 5. box-sizing: inherit;
+6. padding vs margin
 
 ---
 

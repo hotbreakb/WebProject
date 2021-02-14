@@ -83,11 +83,12 @@ a {
 @media screen and (max-width: 768px) {
   .navbar {
     justify-content: space-between;
+    padding: 5px;
   }
 
   .navbar .title {
     font-size: 18px;
-    padding: 2px;
+    padding: 13px;
   }
 
   .navbar .navbar_list {
@@ -160,20 +161,17 @@ a {
 /*------------------------------------------------*/
 /* main-img */
 
-.main-Img {
+.slideshow-container {
   display: flex;
   flex-direction: column;
 }
 
-.main-Img img {
+.slideshow-container img {
   float: right; /* Alignment: right */
+  width: 100%;
   height: 48vh; /* vw: using viewport */
   object-fit: cover;
   vertical-align: middle;
-}
-
-.slideshow-container img {
-  width: 100%;
 }
 
 .dotBtn {
@@ -229,6 +227,30 @@ a {
     opacity: 1;
   }
 } */
+
+@media screen and (max-width: 768px) {
+  .slideshow-container img {
+    float: right; /* Alignment: right */
+    height: 86vh;
+    object-fit: cover;
+    vertical-align: middle;
+  }
+
+  .dotBtn {
+    position: absolute;
+    top: 90.8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* bottom: 100%; */
+    text-align: center;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+  }
+}
 
 /*------------------------------------------------*/
 /* container */
