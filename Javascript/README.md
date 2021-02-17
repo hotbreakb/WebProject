@@ -6,7 +6,7 @@
 
   - toString(): string;
 
-
+<br>
 
 ### Q4.
 
@@ -30,7 +30,7 @@ console.log(array);
 - shift(); 앞에 있는 문자 제거
 - 배열 변형: splice()
 
-
+<br>
 
 // array 변형
 
@@ -45,7 +45,7 @@ console.log(array);
 [3, 4, 5]
 ```
 
-
+<br>
 
 // array 유지
 
@@ -60,11 +60,9 @@ console.log(array);
 [1, 2, 3, 4, 5]
 ```
 
-
-
 원하는 곳만 받아서 사용하고 싶을 때
 
-
+<br>
 
 ### Q5.
 
@@ -92,13 +90,13 @@ const result = students.find(function (student, index) {
 
 3. 함수가 한 줄이면 {}, return, ;을 지울 수 있다.
 
-
+<br>
 
 // function (student)의 student는 함수의 인자일 뿐이다. 다른 문자로 바꿔도 문제가 없다. find를 호출할 때 콜백함수를 쓰는데, obj로 student가 들어간 것이다.
 
+<br>
 
-
-#### Q6.
+### Q6.
 
 ```javascript
 const result = students.filter((student) => student.enrolled);
@@ -109,7 +107,7 @@ console.log(result);
 
 // result는 배열이니까 []로 선언하고 사용해야 한다고 생각했는데 바로 초기화를 했다.
 
-
+<br>
 
 *Returns the elements of an array that meet the condition specified in a callback function.*
 
