@@ -1,6 +1,6 @@
 ## Clone Website
 
-![smartmockups_kl50trsc](https://user-images.githubusercontent.com/64337152/107874422-0d120c80-6efd-11eb-90a9-b1f7949ffd96.png)
+![smartmockups_kl51790v](https://user-images.githubusercontent.com/64337152/107874690-86f6c580-6efe-11eb-85cc-734b506ca759.png)
 
 This is belongs to me:)
 
@@ -11,6 +11,7 @@ This is belongs to me:)
 ## Purpose
 
 To clone a reactive website
+
 URL: http://lecashmere.co.kr/
 
 Reference:
